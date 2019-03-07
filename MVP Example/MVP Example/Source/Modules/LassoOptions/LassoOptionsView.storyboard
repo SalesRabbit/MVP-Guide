@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="k19-00-Hs7">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lasso Options View Controller-->
+        <scene sceneID="Tg8-iK-Pty">
+            <objects>
+                <viewController id="k19-00-Hs7" customClass="LassoOptionsViewController" customModule="MVP_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gdR-pg-lv3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HSa-M1-nII">
+                                <rect key="frame" x="87.5" y="190.5" width="200" height="306"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-Wu-04S">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTD-Uf-g8u">
+                                        <rect key="frame" x="0.0" y="46" width="200" height="30"/>
+                                        <state key="normal" title="Create Area"/>
+                                        <connections>
+                                            <action selector="didTapCreateAreaButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="BfQ-UP-g5z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TOv-AI-z3l">
+                                        <rect key="frame" x="0.0" y="92" width="200" height="30"/>
+                                        <state key="normal" title="Ownership"/>
+                                        <connections>
+                                            <action selector="didTapOwnershipButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="Jpf-8O-AZs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNN-ji-2j0">
+                                        <rect key="frame" x="0.0" y="138" width="200" height="30"/>
+                                        <state key="normal" title="Route"/>
+                                        <connections>
+                                            <action selector="didTapRouteButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="Y1X-HK-izJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNI-1I-fRb">
+                                        <rect key="frame" x="0.0" y="184" width="200" height="30"/>
+                                        <state key="normal" title="Status"/>
+                                        <connections>
+                                            <action selector="didTapStatusButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="mIo-2V-iFg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSv-yR-XhZ">
+                                        <rect key="frame" x="0.0" y="230" width="200" height="30"/>
+                                        <state key="normal" title="Delete"/>
+                                        <connections>
+                                            <action selector="didTapDeleteButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="0KQ-kn-dwi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dN-X3-PiP">
+                                        <rect key="frame" x="0.0" y="276" width="200" height="30"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="didTapDoneButton:" destination="k19-00-Hs7" eventType="touchUpInside" id="MHM-x1-j6h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="mga-QO-flK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HSa-M1-nII" firstAttribute="centerY" secondItem="waG-HJ-jrQ" secondAttribute="centerY" id="Fbu-xn-JEc"/>
+                            <constraint firstItem="HSa-M1-nII" firstAttribute="centerX" secondItem="waG-HJ-jrQ" secondAttribute="centerX" id="evS-hp-ftL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="waG-HJ-jrQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="5PG-Wu-04S" id="AZ6-VT-mqU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="og4-vP-bXm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-62" y="163"/>
+        </scene>
+    </scenes>
+</document>
